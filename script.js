@@ -53,9 +53,5 @@ function resetAutoSlide() {
     autoSlide = setInterval(nextSlide, 2000);
 }
 
-// Pause Auto-Slide on Hover
-document.querySelector(".slider-container").addEventListener("mouseenter", () => clearInterval(autoSlide));
-document.querySelector(".slider-container").addEventListener("mouseleave", resetAutoSlide);
-
 // Initialize
 updateSlide();
